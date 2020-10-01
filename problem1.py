@@ -19,3 +19,16 @@ Enter a number: 48
 """
 
 #! python3
+
+import math
+
+print("=======================================")
+print("State whether the number is frue ")
+a = float(input("enter a number: "))
+b = 6
+c = 8 
+if math.round(a / b) and math.round(a / c) :
+  print(" is a frue")
+else:
+  print("is not a frue")
+print("=======================================")
