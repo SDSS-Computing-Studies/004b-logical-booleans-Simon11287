@@ -23,3 +23,14 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+
+import math
+print("=======================================")
+print("Determine if the smaller is a factor of the larger")
+a = float(input("enter a number: "))
+b = float(input("enter another number: "))
+
+if math.floor(a / b) :
+  print("xx is a factor of yy")
+else:
+  print("is not a factor of yy")
