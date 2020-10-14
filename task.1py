@@ -21,8 +21,8 @@ print("Tell them if the number is between 0.9759 and 1.016.")
 a= float(input("enter a number: "))
 b = 0.9759
 c = 1.016
-if b > a < c :
-  print("That is not within normal Earth orbit.")
+if b < a > c :
+  print("That is  not within normal Earth orbit.")
 else:
-  print("That is within normal Earth orbit.")
+  print("That is  within normal Earth orbit.")
 print("=======================================")
