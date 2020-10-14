@@ -30,7 +30,7 @@ print("Determine if the smaller is a factor of the larger")
 a = float(input("enter a number: "))
 b = float(input("enter another number: "))
 
-if math.floor(a / b) :
+if math.round(a / b) :
   print("xx is a factor of yy")
 else:
   print("is not a factor of yy")
