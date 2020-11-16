@@ -16,13 +16,10 @@ That is within normal Earth orbit.
 That is not within normal Earth orbit.
 """
 
-print("=======================================")
-print("Tell them if the number is between 0.9759 and 1.016.")
-a= float(input("enter a number: "))
-b = 0.9759
-c = 1.016
-if b < a > c :
-  print("That is  not within normal Earth orbit.")
+
+a=input("Enter a number")
+a=float(a)
+if a>0.9759 and a<1.016:
+  print("That is within normal Earth orbit.")
 else:
-  print("That is  within normal Earth orbit.")
-print("=======================================")
+  print("That is not within normal Earth orbit.")
