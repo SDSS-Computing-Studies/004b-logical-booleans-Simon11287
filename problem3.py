@@ -26,3 +26,38 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+
+import math
+a=input("Enter integer 1")
+b=input("Enter integer 2")
+c=input("Enter integer 3")
+a=float(a)
+b=float(b)
+c=float(c)
+
+if a>(b and c):
+    x=math.pow(c,2)
+    y=math.pow(b,2)
+    z=math.pow(a,2)
+elif b>(a and c):
+    x=math.pow(a,2)
+    y=math.pow(c,2)
+    z=math.pow(b,2)
+elif c>(a and b):
+    x=math.pow(a,2)
+    y=math.pow(b,2)
+    z=math.pow(c,2)
+
+if z==(y+x):
+    z=math.pow(z,1/2)
+    z=int(z)
+    z=str(z)
+    y=math.pow(y,1/2)
+    y=int(y)
+    y=str(y)
+    x=math.pow(x,1/2)
+    x=int(x)
+    x=str(x)
+    print( x +','+y+','+z +" form a Pythagorean triple")
+elif z<(y+z) or z>(y+x):
+    print(" do not form a Pythagorean triple")
